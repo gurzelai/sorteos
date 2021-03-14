@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.sorteo"
+        applicationId "com.gurzelai.sorteo"
         minSdkVersion 24
         targetSdkVersion 30
         versionCode 1

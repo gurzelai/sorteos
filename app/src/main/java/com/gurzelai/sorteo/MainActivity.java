@@ -1,4 +1,4 @@
-package com.example.sorteo;
+package com.gurzelai.sorteo;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -1,12 +1,5 @@
-package com.example.sorteo;
+package com.gurzelai.sorteo;
 
-import android.os.Build;
-import android.os.Parcel;
-import android.os.Parcelable;
-
-import androidx.annotation.RequiresApi;
-
-import java.io.Serializable;
 import java.util.List;
 
 public abstract class Sorteo {

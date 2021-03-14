@@ -1,4 +1,4 @@
-package com.example.sorteo;
+package com.gurzelai.sorteo;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

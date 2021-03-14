@@ -1,6 +1,4 @@
-package com.example.sorteo;
-
-import android.os.Parcelable;
+package com.gurzelai.sorteo;
 
 import java.io.Serializable;
 import java.util.ArrayList;

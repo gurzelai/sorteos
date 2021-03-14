@@ -1,13 +1,5 @@
-package com.example.sorteo;
+package com.gurzelai.sorteo;
 
-import android.annotation.SuppressLint;
-import android.os.Build;
-import android.os.Parcel;
-import android.os.Parcelable;
-
-import androidx.annotation.RequiresApi;
-
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
