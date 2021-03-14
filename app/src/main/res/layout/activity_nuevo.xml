@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00D4D4"
+    android:paddingLeft="15sp"
+    android:paddingTop="15sp"
+    android:paddingRight="15sp"
+    android:paddingBottom="15sp"
+    tools:context=".Nuevo">
+
+    <Button
+        android:id="@+id/atras"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnañadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#CD8E8E"
+        app:layout_constraintBottom_toBottomOf="@+id/nombreNuevo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nombreNuevo"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/nombreNuevo"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/teal_700"
+        android:gravity="center_vertical"
+        android:hint="Nombre..."
+        android:imeOptions="actionSend"
+        android:inputType="textNoSuggestions|textPersonName|textCapSentences"
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnañadir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/lvParticipantes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#12A1A1"
+        app:layout_constraintBottom_toTopOf="@+id/atras"
+        app:layout_constraintTop_toBottomOf="@+id/radRes"
+        tools:layout_editor_absoluteX="15dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="AÑADE PARTICIPANTES"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/nombreNuevo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Restablecer"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreNuevo" />
+
+
+    <CheckBox
+        android:id="@+id/checkOrdenados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Ordenados"
+        android:textColorHighlight="#F2F2F2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/lvParticipantes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radRes"
+        app:layout_constraintTop_toBottomOf="@+id/nombreNuevo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
